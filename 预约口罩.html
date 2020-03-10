@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://kzyynew.qingdao.gov.cn:81/authPage/orderPage -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>预约口罩</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="./预约口罩_files/layui.css" media="all">
+    <link rel="stylesheet" href="./预约口罩_files/layer.css" media="all">
+    <link rel="stylesheet" href="./预约口罩_files/colorUi.css" media="all">
+    <link rel="stylesheet" href="./预约口罩_files/icon.css" media="all">
+    <script type="text/javascript" src="./预约口罩_files/layui.all.js.下载"></script><link id="layuicss-laydate" rel="stylesheet" href="./预约口罩_files/laydate.css" media="all"><link id="layuicss-layer" rel="stylesheet" href="./预约口罩_files/layer(1).css" media="all"><link id="layuicss-skincodecss" rel="stylesheet" href="./预约口罩_files/code.css" media="all">
+    <script type="text/javascript" src="./预约口罩_files/jquery-1.4.4.min.js.下载"></script>
+    <style>
+        .layui-form-item { border-bottom: 1px solid #ececec; margin-bottom: 0; padding: 6px 0 }
+        .layui-input { border: 0 }
+        .layui-m-layercont { padding: 30px 10px !important }
+    </style>
+<link href="./预约口罩_files/layer(2).css" type="text/css" rel="styleSheet" id="layermcss"></head>
+<body class="bg-gray">
+<!--<div class="cu-bar fixed bg-white" style="height: 45px; padding-top: 0;">-->
+    <!--<div class="action"><a href="javascript:history.go(-1)"><span class="iconfont cuIcon-back"></span> 返回</a></div>-->
+    <!--<div class="content text-black" style="top: 0">预约口罩</div>-->
+<!--</div>-->
+<form class="bg-white layui-form" style="margin-top: 10px" lay-filter="orderForm">
+    <div class="layui-form-item border-bottom">
+        <label class="layui-form-label"><b class="text-red">*</b> 姓名</label>
+        <div class="layui-input-block">
+            <input class="layui-input" name="tt" type="hidden" value="tt">
+            <input class="layui-input" name="uid" type="hidden">
+            <input class="layui-input" name="name" lay-verify="required" type="text" value="" placeholder="请输入姓名">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><b class="text-red">*</b> 电话</label>
+        <div class="layui-input-block">
+            <input class="layui-input" name="mobile" lay-verify="required|phone" type="text" value="" placeholder="请输入手机号码">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><b class="text-red">*</b> 身份证号</label>
+        <div class="layui-input-block">
+            <input class="layui-input" name="code" lay-verify="required|len18" type="text" value="" placeholder="请输入身份证号">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><b class="text-red">*</b> 预约药店</label>
+        <div class="layui-input-block">
+            <input class="layui-input" name="ydid" type="hidden" value="" placeholder="" readonly="">
+            <input class="layui-input" name="ydname" type="text" value="" placeholder="" readonly="">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><b class="text-red">*</b> 药店地址</label>
+        <div class="layui-input-block">
+            <input class="layui-input" name="ydaddress" type="text" value="" placeholder="" readonly="">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><b class="text-red">*</b> 验证码</label>
+        <div class="layui-input-inline">
+            <input class="layui-input layui-form-danger" lay-verify="required|len4" name="capval" type="text" value="" placeholder=""><img id="captchaImg" alt="验证码" src="./预约口罩_files/captcha" onclick="this.src=&#39;/kz/captcha?&#39;+Math.random()">
+        </div>
+    </div>
+
+    <div class="layui-form-item cu-bar fixed bg-white" style="top:auto; bottom: 0; padding: 0 20px; text-align: right">
+        <button class="cu-btn bg-blue" style="margin: auto" lay-submit="" lay-filter="orderSubmit">立即提交</button>
+        <!--<button type="reset" class="cu-btn layui-btn-primary">重置</button>-->
+    </div>
+</form>
+<script type="text/javascript" src="./预约口罩_files/common.js.下载"></script>
+<script type="text/javascript" src="./预约口罩_files/layer.js.下载"></script>  <!--手机端引用手机端的layer-->
+<script type="text/javascript" src="./预约口罩_files/orderPage.js.下载"></script>
+
+<div class="layui-layer-move"></div></body></html>
